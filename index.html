@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,34 +9,147 @@
 			src="https://kit.fontawesome.com/e7dc570521.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>Startpage</title>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<style>
+			body, html {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				font-family: 'Baloo Bhaijaan 2', Arial, sans-serif;
+				background-color: #f3f4f6;
+			}
+			.container {
+				min-height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			h2 {
+				font-size: 2.5rem;
+				color: #333;
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+			.sponsors-grid {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+				max-width: 1200px;
+				width: 100%;
+			}
+			.sponsors-row {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 3rem;
+			}
+			.sponsor-box {
+				width: 200px;
+				height: 180px;
+				background-color: white;
+				border-radius: 8px;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 2rem;
+				box-sizing: border-box;
+				transition: box-shadow 0.3s ease, transform 0.3s ease;
+				border-top: #0048ff solid 3px;
+				text-decoration: none;
+				color: inherit;
+			}
+			.sponsor-box:hover {
+				box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+				transform: translateY(-5px);
+			}
+			.sponsor-logo {
+				width: 100px;
+				height: 100px;
+				object-fit: contain;
+				margin-bottom: 0.5rem;
+			}
+			.sponsor-name {
+				font-size: 0.9rem;
+				font-weight: bold;
+				color: #333;
+				text-align: center;
+				white-space: nowrap;
+			}
+			@media (max-width: 768px) {
+				.sponsor-box {
+					width: 140px;
+					height: 140px;
+				}
+				.sponsor-logo {
+					width: 80px;
+					height: 80px;
+				}
+			}
+			.title {
+				margin-bottom: 120px;
+			}
+			img {
+				margin-top: 20px;
+			}
+		</style>
+		<title>الصفحة الرئيسية</title>
 	</head>
-	<body class="body-dark">
-		<div class="btn-theme"><i class="fas fa-moon"></i></div>
-		<main>
-			<div class="container social-container">
-				<h2>Social</h2>
-				<a href="https://mail.tutanota.com/login">Tutanota</a>
-				<a href="https://www.protonmail.com">ProtonMail</a>
-				<a href="https://www.youtube.com">YouTube</a>
-				<a href="https://www.reddit.com">Reddit</a>
+
+	<body>
+		<div class="container">
+			<h2 class="title">الوصول السريع</h2>
+			<div class="sponsors-grid">
+				<div class="sponsors-row">
+					<a target="_blank" href="https://www.djezzy.dz/" class="sponsor-box">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Logo_Djezzy_2015.png" alt="Djezzy logo" class="sponsor-logo">
+						<p class="sponsor-name">جيزي</p>
+					</a>
+					<a target="_blank" href="https://www.ade.dz/" class="sponsor-box">
+						<img src="https://baridinet.poste.dz/img/factures/ade.png" alt="Algérienne Des Eaux logo" class="sponsor-logo">
+						<p class="sponsor-name">الجزائرية للمياه</p>
+					</a>
+					<a target="_blank" href="https://airalgerie.dz/" class="sponsor-box">
+						<img src="https://lapatrienews.dz/wp-content/uploads/2022/06/Air-Alger.png" alt="Air Algérie logo" class="sponsor-logo">
+						<p class="sponsor-name">الخطوط الجوية الجزائرية</p>
+					</a>
+					<a target="_blank" href="https://www.sonelgaz.dz/" class="sponsor-box">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Sonlgaz.png" alt="Sonelgaz logo" class="sponsor-logo">
+						<p class="sponsor-name">سونالغاز</p>
+					</a>
+					<a target="_blank" href="https://www.univ-saida.dz/" class="sponsor-box">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRHzeOSYWkNSOzbBYfETst8rFteiksuM_k5w&s" alt="Université de Saïda logo" class="sponsor-logo">
+						<p class="sponsor-name">جامعة سعيدة</p>
+					</a>
+				</div>
+				<div class="sponsors-row">
+					<a target="_blank" href="https://sonatrach.com/" class="sponsor-box">
+						<img src="https://sonatrach.com/img/logo.png" alt="Sonatrach logo" class="sponsor-logo">
+						<p class="sponsor-name">سوناطراك</p>
+					</a>
+					<a target="_blank" href="https://www.algerietelecom.dz/" class="sponsor-box">
+						<img src="https://www.algerietelecom.dz/assets/front/img/logo.svg" alt="Algérie Télécom logo" class="sponsor-logo">
+						<p class="sponsor-name">إتصالات الجزائر</p>
+					</a>
+					<a target="_blank" href="https://www.poste.dz/" class="sponsor-box">
+						<img src="https://www.entv.dz/wp-content/uploads/2019/11/alg%C3%A9rie-poste.png" alt="Algérie Poste logo" class="sponsor-logo">
+						<p class="sponsor-name">بريد الجزائر</p>
+					</a>
+					<a target="_blank" href="https://aptracking.poste.dz/" class="sponsor-box">
+						<img src="https://aptracking.poste.dz/logotracking.png" alt="Tracking logo" class="sponsor-logo">
+						<p class="sponsor-name">تتبع الطرود</p>
+					</a>
+					<a target="_blank" href="https://www.seaal.dz/" class="sponsor-box">
+						<img src="https://seaal.dz/fr/wp-content/uploads/sites/2/2023/03/logo-seaal-nouvelle-identite-01-1.png" alt="SEAAL logo" class="sponsor-logo">
+						<p class="sponsor-name">سيال</p>
+					</a>
+				</div>
 			</div>
-			<div class="container dev-container">
-				<h2>Dev</h2>
-				<a href="https://www.udemy.com">Udemy</a>
-				<a href="https://www.coursera.org">Coursera</a>
-				<a href="https://www.freecodecamp.org/learn">FCC</a>
-				<a href="https://www.github.com">Github</a>
-			</div>
-			<div class="container other-container">
-				<h2>Other</h2>
-				<a href="https://www.wallhaven.cc">Wallhaven</a>
-				<a href="https://wiki.gentoo.org">Gentoo</a>
-				<a href="https://wiki.archlinux.org">ArchWiki</a>
-				<a href="https://www.unsplash.com">Unsplash</a>
-			</div>
-		</main>
+		</div>
 		<script src="script.js"></script>
 	</body>
 </html>
